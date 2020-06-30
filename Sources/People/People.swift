@@ -16,7 +16,7 @@ public struct People {
         return "\(name) is a \(gender.rawValue), \(gender.genderString) is \(age) years old."
     }
     
-    var petInfos = [PetInfo]()
+    public var petInfos = [PetInfo]()
     
     public mutating func addPet(pet: Pet, name: String) {
         let petInfo = PetInfo(pet: pet, name: name)
