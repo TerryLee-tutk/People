@@ -15,6 +15,13 @@ public struct People {
     public func peopleInfo() -> String {
         return "\(name) is a \(gender.rawValue), \(gender.genderString) is \(age) years old."
     }
+    
+    var petInfos = [PetInfo]()
+    
+    public mutating func addPet(pet: Pet, name: String) {
+        let petInfo = PetInfo(pet: pet, name: name)
+        petInfos.append(petInfo)
+    }
 }
 
 public enum Gender: String {
