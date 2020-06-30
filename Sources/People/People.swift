@@ -1,4 +1,4 @@
-struct People {
+public struct People {
     var text = "Hello, World!"
     
     var name: String
@@ -10,7 +10,7 @@ struct People {
     }
 }
 
-enum Gender: String {
+public enum Gender: String {
     case male
     case female
     
