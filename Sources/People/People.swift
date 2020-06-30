@@ -1,4 +1,11 @@
-struct People {
+public struct People {
+    
+    public init(name: String, gender: Gender, age: Int) {
+        self.name = name
+        self.gender = gender
+        self.age = age
+    }
+    
     var text = "Hello, World!"
     
     var name: String
@@ -10,7 +17,7 @@ struct People {
     }
 }
 
-enum Gender: String {
+public enum Gender: String {
     case male
     case female
     
