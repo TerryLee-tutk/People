@@ -12,7 +12,7 @@ public struct People {
     var gender: Gender
     var age: Int
     
-    func peopleInfo() -> String {
+    public func peopleInfo() -> String {
         return "\(name) is a \(gender.rawValue), \(gender.genderString) is \(age) years old."
     }
 }
