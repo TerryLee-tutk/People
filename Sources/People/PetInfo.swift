@@ -9,8 +9,8 @@ import Foundation
 
 public struct PetInfo {
     
-    var pet: Pet
-    var name: String
+    public var pet: Pet
+    public var name: String
     
     public init(pet: Pet = .none, name: String = "") {
         self.pet = pet

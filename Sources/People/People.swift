@@ -6,11 +6,11 @@ public struct People {
         self.age = age
     }
     
-    var text = "Hello, World!"
+    public var text = "Hello, World!"
     
-    var name: String
-    var gender: Gender
-    var age: Int
+    public var name: String
+    public var gender: Gender
+    public var age: Int
     
     public func peopleInfo() -> String {
         return "\(name) is a \(gender.rawValue), \(gender.genderString) is \(age) years old."
@@ -28,7 +28,7 @@ public enum Gender: String {
     case male
     case female
     
-    var genderString: String {
+    public var genderString: String {
         switch self {
         case .male:
             return "he"
